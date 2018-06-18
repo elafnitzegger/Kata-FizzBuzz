@@ -22,6 +22,7 @@ namespace FizzBuzz
         {
             return value.IsDivisibleBy(3);
         }
+
         public static bool IsBuzz(this int value)
         {
             return value.IsDivisibleBy(5);

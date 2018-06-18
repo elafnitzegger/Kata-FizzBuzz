@@ -8,7 +8,7 @@ namespace FizzBuzz.Tests
         [Fact]
         public void ShouldReturnFizzForDivBy3()
         {
-            for (int i = 1; i * 3 < 100; i++)
+            for (int i = 1; i * 3 <= 100; i++)
             {
                 Assert.Contains("Fizz", FizzBuzz.Engine.Map(i * 3));
             }
@@ -17,7 +17,7 @@ namespace FizzBuzz.Tests
         [Fact]
         public void ShouldReturnBuzzForDivBy5()
         {
-            for (int i = 1; i * 5 < 100; i++)
+            for (int i = 1; i * 5 <= 100; i++)
             {
                 Assert.Contains("Buzz", FizzBuzz.Engine.Map(i * 5));
             }
@@ -26,7 +26,7 @@ namespace FizzBuzz.Tests
         [Fact]
         public void ShouldReturnFizzBuzzForDivBy3And5()
         {
-            for (int i = 1; i * 3 * 5 < 100; i++)
+            for (int i = 1; i * 3 * 5 <= 100; i++)
             {
                 Assert.Contains("FizzBuzz", FizzBuzz.Engine.Map(i * 3 * 5));
             }
